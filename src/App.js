@@ -1,8 +1,8 @@
 import './App.css';
 import Box from './component/Box';
-import sicssors from './asset/pika_v.jpg';
+import sicssors from './asset/pika_v.png';
 import rock from './asset/pika_rock.png';
-import paper from './asset/pika_paper.jpg';
+import paper from './asset/pika_paper.png';
 import { useState } from 'react';
 
 const choice = {

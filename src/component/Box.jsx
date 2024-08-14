@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import question from '../asset/pika_question.jpg';
+import question from '../asset/pika_question.png';
 
 export default function Box({ title, item, result }) {
   const [computerResult, setComputerResult] = useState(null);
@@ -11,7 +11,7 @@ export default function Box({ title, item, result }) {
   }, [result]);
 
   return (
-    <div>
+    <div className='box-container'>
       <h1>{title}</h1>
       <p>{item ? item.name : ' '}</p>
       <img
