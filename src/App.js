@@ -51,9 +51,12 @@ function App() {
 
   return (
     <div className='main'>
-      <Box title='You' item={userSelect} result={result} />
-      <Box title='Computer' item={computerSelect} result={result} />
-      <div>
+      <h1>Rock-Paper-Sicssors</h1>
+      <div className='box-Group'>
+        <Box title='You' item={userSelect} result={result} />
+        <Box title='Computer' item={computerSelect} result={result} />
+      </div>
+      <div className='button-Group'>
         <button onClick={() => play('sicssors')}>가위</button>
         <button onClick={() => play('rock')}>바위</button>
         <button onClick={() => play('paper')}>보</button>

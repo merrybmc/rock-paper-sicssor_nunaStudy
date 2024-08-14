@@ -1,22 +1,93 @@
+body {
+  background-image: url('./asset/pika_pattern.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  min-width: 900px;
+  min-height: 800px;
+  padding: 54px;
+  border-radius: 18px;
+}
+
 .box {
-  border: 1px solid black;
+  border: 3px solid black;
+}
+
+.box-Group {
+  display: flex;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .box-Group {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.button-Group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .item-img {
   width: 400px;
+  height: 400px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
 }
 
 .win {
-  border: 10px solid green;
+  border: 15px solid green;
   color: green;
 }
 
 .lose {
-  border: 10px solid red;
+  border: 15px solid red;
   color: red;
 }
 
 .tie {
-  border: 10px solid black;
+  border: 15px solid black;
   color: black;
+}
+
+button {
+  width: 120px;
+  font-size: 24px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: aqua;
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import question from '../asset/pika_question.jpg';
 
 export default function Box({ title, item, result }) {
   const [computerResult, setComputerResult] = useState(null);
@@ -10,9 +11,14 @@ export default function Box({ title, item, result }) {
   }, [result]);
 
   return (
-    <div className={`box ${result}`}>
+    <div>
       <h1>{title}</h1>
-      <img className='item-img' src={item && item.img} alt={title + item.img} />
+      <p>{item ? item.name : ' '}</p>
+      <img
+        className={`item-img box ${result}`}
+        src={item ? item.img : question}
+        alt={item && title + item.img}
+      />
       <h2>{title === 'You' ? result : computerResult}</h2>
     </div>
   );
