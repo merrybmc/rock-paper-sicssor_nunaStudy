@@ -10,9 +10,9 @@ export default function Box({ title, item, result }) {
   }, [result]);
 
   return (
-    <div className='box'>
+    <div className={`box ${result}`}>
       <h1>{title}</h1>
-      <img className='item-img' src={item && item.img} alt='' />
+      <img className='item-img' src={item && item.img} alt={title + item.img} />
       <h2>{title === 'You' ? result : computerResult}</h2>
     </div>
   );
