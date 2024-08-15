@@ -49,6 +49,12 @@ function App() {
       return computer.name === 'Rock' ? setResult('win') : setResult('lose');
   };
 
+  const reset = () => {
+    setUserSelect(null);
+    setComputerSelect(null);
+    setResult(null);
+  };
+
   return (
     <div className='main'>
       <h1>Rock-Paper-Sicssors</h1>
@@ -61,6 +67,7 @@ function App() {
         <button onClick={() => play('rock')}>바위</button>
         <button onClick={() => play('paper')}>보</button>
       </div>
+      <button onClick={reset}>Reset</button>
     </div>
   );
 }

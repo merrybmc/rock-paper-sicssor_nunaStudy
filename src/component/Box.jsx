@@ -8,6 +8,7 @@ export default function Box({ title, item, result }) {
     result === 'tie' && setComputerResult('tie');
     result === 'win' && setComputerResult('lose');
     result === 'lose' && setComputerResult('win');
+    result === null && setComputerResult(null);
   }, [result]);
 
   return (
