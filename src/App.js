@@ -42,7 +42,7 @@ function App() {
     if (user.name === computer.name) {
       return setResult('tie');
     } else if (user.name === 'Rock')
-      return computer.name === 'Scissors' ? setResult('win') : setResult('lose');
+      return computer.name === 'Sicssors' ? setResult('win') : setResult('lose');
     else if (user.name === 'Sicssors')
       return computer.name === 'Paper' ? setResult('win') : setResult('lose');
     else if (user.name === 'Paper')

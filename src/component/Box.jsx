@@ -13,9 +13,9 @@ export default function Box({ title, item, result }) {
   return (
     <div className='box-container'>
       <h1>{title}</h1>
-      <p>{item ? item.name : ' '}</p>
+      <p>{item && item.name}</p>
       <img
-        className={`item-img box ${result}`}
+        className={`item-img box ${title === 'You' ? result : computerResult}`}
         src={item ? item.img : question}
         alt={item && title + item.img}
       />
